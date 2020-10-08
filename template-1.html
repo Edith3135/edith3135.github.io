@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template-1</title>
+    <link rel="stylesheet" href="template-1.css">
+</head>
+
+<body>
+    <header>
+        <img src="./img/flower-bg.png" alt="">
+        <div class="main-header">藝紋美學</div>
+    </header>
+
+    <section>
+        <div class="container-1">
+            <div class="items eyebrows" data-aos="fade-right">
+                <p>韓式眉毛</p>
+            </div>
+
+            <div class="items facial-care" data-aos="fade-up">
+                <p>臉部保養</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-2">
+            <div class="txt">
+                <h3>最新消息</h3>
+                <p>coming soon~</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-3">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img src="https://picsum.photos/id/7/300/200" alt=""></div>
+                    <div class="swiper-slide"> <img src="https://picsum.photos/id/1/300/200" alt=""></div>
+                    <div class="swiper-slide"> <img src="https://picsum.photos/id/8/300/200" alt=""></div>
+                    <div class="swiper-slide"> <img src="https://picsum.photos/id/3/300/200" alt=""></div>
+                    <div class="swiper-slide"> <img src="https://picsum.photos/id/4/300/200" alt=""></div>
+                    <div class="swiper-slide"> <img src="https://picsum.photos/id/5/300/200" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="main-content">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3637.734874721838!2d120.71839991430717!3d24.251049975384298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5aSq5bmz5rSL55m-6LKo!5e0!3m2!1szh-TW!2stw!4v1602052766972!5m2!1szh-TW!2stw"
+                width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+        <div class="txt">
+            <p class="tel">電話：09XX-XXX-XXX</p>
+            <p class="facebook"><img src="./img/facebook.png" alt=""></p>
+            <p class="message"><img src="./img/message.png" alt=""></p>
+            <p class="copyright">Copyright © 2020 藝紋美學 版權所有</p>
+        </div>
+
+    </footer>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+</body>
+
+</html>
